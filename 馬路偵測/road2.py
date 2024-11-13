@@ -66,7 +66,7 @@ def main(image_path):
     road_mask = bfs_road_detection(lbp_image)
     
     # 疊加綠色透明圖層
-    result_image = overlay_road(image, road_mask)
+    result_image = overlay_road(image, result_image)
     
     # 顯示結果
     cv2.imshow("Result", road_mask)
